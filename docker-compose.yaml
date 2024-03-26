@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: 'postgres:16.2-alpine'
+    volumes:
+      - /volume:/var/lib/postgresql/data
+    environment:
+      - 'POSTGRES_DB=runnerz'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=root'
+    ports:
+      - '5432:5432'
+
+volumes:
+  volume:
+    external: true
