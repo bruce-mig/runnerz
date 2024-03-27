@@ -8,10 +8,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public class JDBCClientRunRepository {
+public class JDBCRunRepository {
     private final JdbcClient jdbcClient;
 
-    public JDBCClientRunRepository(JdbcClient jdbcClient) {
+    public JDBCRunRepository(JdbcClient jdbcClient) {
         this.jdbcClient = jdbcClient;
     }
 

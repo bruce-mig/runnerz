@@ -13,10 +13,10 @@ import java.io.InputStream;
 @Component
 public class RunJSONDataLoader implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(RunJSONDataLoader.class);
-    private final JDBCClientRunRepository runRepository;
+    private final JDBCRunRepository runRepository;
     private final ObjectMapper objectMapper;
 
-    public RunJSONDataLoader(JDBCClientRunRepository runRepository, ObjectMapper objectMapper) {
+    public RunJSONDataLoader(JDBCRunRepository runRepository, ObjectMapper objectMapper) {
         this.runRepository= runRepository;
         this.objectMapper = objectMapper;
     }
