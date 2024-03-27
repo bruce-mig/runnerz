@@ -50,7 +50,8 @@ public class RunController {
         runRepository.deleteById(id);
     }
 
-//    List<Run> findByLocation(@RequestParam String location) {
-//        return runRepository.findByLocation(location);
-//    }
+    @GetMapping("/location/{location}")
+    List<Run> findByLocation(@PathVariable String location) {
+        return runRepository.findByLocation(location);
+    }
 }
